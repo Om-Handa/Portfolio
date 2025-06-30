@@ -14,7 +14,7 @@ function Home() {
             <p className="md:text-2xl text-4xl  font-bold py-2">Hi, I am</p>
             <p className="md:text-5xl text-6xl font-bold">Om Handa</p>
             <p className="md:text-lg  text-2xl font-bold text-[#909090]">Front-end Developer</p>
-            <a href="https://drive.google.com/file/d/17qwkoF5Idmyosh1iriZyC8Wgnv1u_3AK/view?usp=sharing" target='_blank'><button className="resume bg-black text-white md:h-12 h-16 w-4/5 md:w-50 font-bold text-2xl md:text-xl rounded-2xl flexad my-10 ">Download Resume</button></a>
+            <a href="https://drive.google.com/file/d/17qwkoF5Idmyosh1iriZyC8Wgnv1u_3AK/view?usp=sharing" className='w-full flexad' target='_blank'><button className="resume bg-black text-white md:h-12 h-16 w-3/4 md:w-full font-bold text-2xl md:text-xl rounded-2xl flexad my-10 ">Download Resume</button></a>
             <div className="links flex space-x-7 md:space-x-5 my-2">
               <a href="https://github.com/Om-Handa" target="_blank" ><img src="/github.png" alt="Github" className="h-10 "/></a>
               <a href="https://www.linkedin.com/in/om-handa-62451b301" target="_blank"><img src="/linkedin.png" alt="LinkedIn" className="h-10 "/></a>

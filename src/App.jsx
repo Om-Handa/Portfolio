@@ -1,8 +1,10 @@
 import Navbar from './components/Navbar'
 import { useEffect } from 'react';
 import { Outlet } from 'react-router-dom'
+import { useLocation } from 'react-router-dom';
 
 function App() {
+  const location = useLocation();
   useEffect(() => {
     if (location.hash) {
       const id = location.hash.replace("#", "");
@@ -10,7 +12,7 @@ function App() {
       if (el) {
         setTimeout(() => {
           el.scrollIntoView({ behavior: "smooth" });
-        }, 300); // wait for render
+        }, 300);
       }
     }
   }, [location]);

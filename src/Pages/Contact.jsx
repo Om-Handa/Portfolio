@@ -12,15 +12,15 @@ function Contact() {
             <div className=' flexad flex-col my-30 w-full'>
                 <div className="border-6 h-16 w-52 flexad text-3xl font-bold">CONTACT ME</div>
                 <div className='md: flexad flex-col mt-16 w-full'>
-                    <div className=" min-w-full md:w-3/5 text-center">
+                    <div className=" w-[95%] md:w-3/5 text-center">
                         <p className="text-2xl">Have a project in mind or just want to say hello?
                             <br></br>
                             Feel free to reach out — I'm always open to new opportunities, collaborations, or tech talk!
                         </p>
                         <br />
                         {contactdetails.map(({ label, value, type }, index) => (
-                            <p key={index} className="text-xl md:text-2xl flexad">
-                                <span className='font-bold px-4'>{label}:</span>
+                            <p key={index} className="text-xl md:text-2xl flex justify-start">
+                                <span className='font-bold px-1 '>{label}:</span>
                                 {type === 'link' ? (
                                     <a href={value} target="_blank" rel="noopener noreferrer" className="underline">{value}</a>
                                 ) : type === 'email' ? (
@@ -31,6 +31,7 @@ function Contact() {
                     </div>
                     <div className="h-[1px] w-full border flexad text-4xl font-bold my-16">Or</div>
                     <div className="right w-full md:w-1/2 flex flex-col">
+                        <h1 className='text-red-700 font-bold text-center text-2xl mb-5 underline' >FORM NOT WORKING YET</h1>
                         <input type="text" className='contactad =' placeholder='Enter Your Name' />
 
                         <input type="email" className='contactad' placeholder='Enter your Email' />

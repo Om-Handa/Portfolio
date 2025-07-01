@@ -1,16 +1,21 @@
 import React from 'react'
+import Todo from '../assets/todo.gif'
+import Weather from '../assets/weather.gif'
+import RPS from '../assets/rockpaperscissors.gif'
+import Analog from '../assets/analog.gif'
+import Digital from '../assets/digital.gif'
 
 function Projects() {
   const projectDetails=[
-    {gifpath:"/todo.gif",githublink:"https://github.com/Om-Handa/React-Todo.git",pagelink:"https://om-handa.github.io/React-Todo/index.html",description:"A simple and responsive Todo App built with React, allowing users to add, view, and manage daily tasks with a clean and intuitive interface."},
+    {gifpath:Todo,githublink:"https://github.com/Om-Handa/React-Todo.git",pagelink:"https://om-handa.github.io/React-Todo/index.html",description:"A simple and responsive Todo App built with React, allowing users to add, view, and manage daily tasks with a clean and intuitive interface."},
 
-    {gifpath:"/weather.gif",githublink:"https://github.com/Om-Handa/Real-time-Weather.git",pagelink:"https://om-handa.github.io/Real-time-Weather/weather.html",description:"A responsive weather app that shows real-time weather data for any city using an API."},
+    {gifpath:Weather,githublink:"https://github.com/Om-Handa/Real-time-Weather.git",pagelink:"https://om-handa.github.io/Real-time-Weather/weather.html",description:"A responsive weather app that shows real-time weather data for any city using an API."},
 
-    {gifpath:"/rockpaperscissors.gif",githublink:"https://github.com/Om-Handa/Rock-Paper-Scissors.git",pagelink:"https://om-handa.github.io/Rock-Paper-Scissors/",description:"A fun and interactive browser game where you play Rock Paper Scissors against the computer."},
+    {gifpath:RPS,githublink:"https://github.com/Om-Handa/Rock-Paper-Scissors.git",pagelink:"https://om-handa.github.io/Rock-Paper-Scissors/",description:"A fun and interactive browser game where you play Rock Paper Scissors against the computer."},
 
-    {gifpath:"/analog.gif",githublink:"https://github.com/Om-Handa/Analog-clock.git",pagelink:"https://om-handa.github.io/Analog-clock/analog_clock.html",description:"A functional analog clock built with HTML, CSS, and JavaScript, mimicking a real-time wall clock"},
+    {gifpath:Analog,githublink:"https://github.com/Om-Handa/Analog-clock.git",pagelink:"https://om-handa.github.io/Analog-clock/analog_clock.html",description:"A functional analog clock built with HTML, CSS, and JavaScript, mimicking a real-time wall clock"},
 
-    {gifpath:"/digital.gif",githublink:"https://github.com/Om-Handa/Digital-Clock.git",pagelink:"https://om-handa.github.io/Digital-Clock/Digitalclock.html",description:"A live digital clock that displays the current time in HH:MM:SS format with clean styling."}
+    {gifpath:Digital,githublink:"https://github.com/Om-Handa/Digital-Clock.git",pagelink:"https://om-handa.github.io/Digital-Clock/Digitalclock.html",description:"A live digital clock that displays the current time in HH:MM:SS format with clean styling."}
   ];
 
   return (

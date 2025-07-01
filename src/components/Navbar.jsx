@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
+import Logo from '../assets/logo.png'
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -11,7 +12,7 @@ const Navbar = () => {
     return (
         <header className={`fixed md:absolute top-0 left-0 w-full z-50 ${isHome ? 'bg-black md:bg-transparent' : 'bg-black'}`}>
             <nav className="flex items-center justify-between px-10 ">
-                <img src="/logo.png" alt="logo" className="h-16" />
+                <img src={Logo} alt="logo" className="h-16" />
 
                 <button onClick={() => setIsOpen(!isOpen)} className='ml-auto md:hidden text-white  '>
                     <svg className="w-8 h-8" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">{isOpen ? (<path d="M6 18L18 6M6 6l12 12" />) : (<path d="M3 12h18M3 6h18M3 18h18" />)} </svg>

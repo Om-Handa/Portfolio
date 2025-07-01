@@ -1,7 +1,10 @@
 import '../App.css'
 import About from '../components/About'
 import Skills from '../components/Skills'
-import Contact from './Contact'
+import Instagram from '../assets/instagram.png'
+import Github from '../assets/github.png'
+import LinkedIn from '../assets/linkedin.png'
+import Me from '../assets/me.png'
 
 function Home() {
 
@@ -16,13 +19,13 @@ function Home() {
             <p className="md:text-lg  text-2xl font-bold text-[#909090]">Front-end Developer</p>
             <a href="https://drive.google.com/file/d/17qwkoF5Idmyosh1iriZyC8Wgnv1u_3AK/view?usp=sharing" className='w-full flexad' target='_blank'><button className="resume bg-black text-white md:h-12 h-16 w-3/4 md:w-full font-bold text-2xl md:text-xl rounded-2xl flexad my-10 ">Download Resume</button></a>
             <div className="links flex space-x-7 md:space-x-5 my-2">
-              <a href="https://github.com/Om-Handa" target="_blank" ><img src="/github.png" alt="Github" className="h-10 "/></a>
-              <a href="https://www.linkedin.com/in/om-handa-62451b301" target="_blank"><img src="/linkedin.png" alt="LinkedIn" className="h-10 "/></a>
-              <a href="https://www.instagram.com/om_handa246/" target="_blank" ><img src="/instagram.png" alt="Instagram" className="h-10 "/></a>
+              <a href="https://github.com/Om-Handa" target="_blank" ><img src={Github} alt="Github" className="h-10 "/></a>
+              <a href="https://www.linkedin.com/in/om-handa-62451b301" target="_blank"><img src={LinkedIn} alt="LinkedIn" className="h-10 "/></a>
+              <a href="https://www.instagram.com/om_handa246/" target="_blank" ><img src={Instagram} alt="Instagram" className="h-10 "/></a>
             </div>
           </div>
           <div className="relative hidden md:inline-block bg-black w-[70%] h-full -ml-[15%] z-0 " style={{ clipPath: "polygon(15% 0, 100% 0, 100% 100%, 0 100%)" }}>
-          <img src="/me.png" alt="me" className='absolute bottom-0 left-55 max-h-[85%] object-contain' />
+          <img src={Me} alt="me" className='absolute bottom-0 left-55 max-h-[85%] object-contain' />
           </div>
         </div>
       </main>

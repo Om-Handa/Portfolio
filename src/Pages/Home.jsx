@@ -13,7 +13,7 @@ function Home() {
       <main className='relative min-h-screen w-[100%] overflow-hidden md:border-2'>
         <div className="flex w-[100%] h-screen">
           <div className="flex flex-col items-center md:items-start justify-center md:px-50 relative bg-[#d7d7d7] w-full md:w-1/2 h-full z-10" style={{ clipPath: "polygon(0 0, 100% 0, 85% 100%, 0% 100%)" }}>
-          <div className='flex md:hidden mb-5'><img className="w-52 h-52 rounded-full object-contain border-8 border-black shadow-lg" src="/me.png" alt="" /></div>
+          <div className='flex md:hidden mb-5'><img className="w-52 h-52 rounded-full object-contain border-8 border-black shadow-lg" src={Me} alt="" /></div>
             <p className="md:text-2xl text-4xl  font-bold py-2">Hi, I am</p>
             <p className="md:text-5xl text-6xl font-bold">Om Handa</p>
             <p className="md:text-lg  text-2xl font-bold text-[#909090]">Front-end Developer</p>

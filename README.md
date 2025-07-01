@@ -1,12 +1,48 @@
-# React + Vite
+# 🧑‍💻 Om Handa's Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive personal portfolio website built using **React**, **Vite**, and **Tailwind CSS**, showcasing my projects, skills, and contact details.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 [Visit Portfolio](https://om-handa.github.io/Portfolio)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📁 Features
+
+- 📄 Multi-page design (Home, Projects, Contact)
+- 🔗 Smooth scroll navigation
+- 📱 Fully responsive across devices
+- 🌙 Dark-themed aesthetics
+- 🛠️ Built with React + TailwindCSS
+- 🚀 Deployed on Vercel
+
+---
+
+## 📸 Project Sections
+
+- **Home**: Brief intro, image, and social links
+- **About**: Who I am and what I do
+- **Skills**: Technologies I use and am learning
+- **Projects**: My live projects with GitHub links
+- **Contact**: Simple contact form and direct details
+
+---
+
+## 🛠️ Tech Stack
+
+- **React**
+- **Vite**
+- **Tailwind CSS**
+- **React Router DOM**
+- **react-router-hash-link**
+
+---
+
+## 🧪 Run Locally
+
+```bash
+git clone https://github.com/Om-Handa/portfolio.git
+cd portfolio
+npm install
+npm run dev

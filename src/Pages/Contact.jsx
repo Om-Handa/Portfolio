@@ -1,6 +1,17 @@
 import React from 'react'
+import { useForm } from "react-hook-form";
 
 function Contact() {
+    const { register, handleSubmit, watch, formState: { errors, isSubmitting, isSubmitSuccessful } } = useForm();
+    const onSubmit = async (data) => {
+        console.log(data)
+        const a = await fetch(`${import.meta.env.VITE_API_URL}/` , {
+            method: "POST", headers: {
+                "Content-Type": "application/json",
+            }, body: JSON.stringify(data)
+        })
+        let res = await a.text()
+    }
     const contactdetails = [
         { label: 'Contact No.', value: '9465129793' },
         { label: 'E-mail:', value: 'omhanda246@gmail.com', type: 'email' },
@@ -30,18 +41,26 @@ function Contact() {
                         ))}
                     </div>
                     <div className="h-[1px] w-full border flexad text-4xl font-bold my-16">Or</div>
-                    <div className="right w-full md:w-1/2 flex flex-col">
-                        <h1 className='text-red-700 font-bold text-center text-2xl mb-5 underline' >FORM NOT WORKING YET</h1>
-                        <input type="text" className='contactad =' placeholder='Enter Your Name' />
+                    <form onSubmit={handleSubmit(onSubmit)} className="right w-full md:w-1/2 flex flex-col">
 
-                        <input type="email" className='contactad' placeholder='Enter your Email' />
+                        <input type="text" className='contactad' {...register("Name", { required: "Name is required" })} placeholder='Enter Your Name' />
+                        {errors.Name && (<span className="text-red-500">{errors.Name.message}</span>)}
 
-                        <input type="number" className='contactad' placeholder='Enter your phone No.' />
+                        <input type="email" className='contactad'  {...register("Email", {
+                            required: "Email is required", pattern: { value: /^\S+@\S+\.\S+$/, message: "Enter a valid email" }
+                        })} placeholder='Enter your Email' />
+                        {errors.Email && (<span className="text-red-500">{errors.Email.message}</span>)}
 
-                        <textarea name="Text" className='m-5 border-4 border-t-0 border-r-0 h-16 px-3' placeholder='Enter Your Message'></textarea>
+                        <input type="number" className='contactad' {...register("Phone_no", {
+                            required: "Phone is required", minLength: { value: 10, message: "Enter at least 10 digits" }, maxLength: { value: 15, message: "Too many digits" }})} placeholder='Enter your phone No.' />
+                        {errors.Phone_no && (<span className="text-red-500">{errors.Phone_no.message}</span>)}
 
-                        <input type="submit" value="SUBMIT" className='m-5 border-x-2 w-28 px-5 text-xl font-bold self-center h-8' />
-                    </div>
+                        <textarea rows="4" {...register("Message", {required: "Message is required",maxLength: {value: 500, message: "Message can't exceed 500 chars"}})} placeholder="Enter your message" className="m-5 border-4 border-t-0 border-r-0 px-3"/>
+                        {errors.Message && (<span className="text-red-500">{errors.Message.message}</span>)}
+
+                        <button type="submit" disabled={isSubmitting} className="m-5 border-x-2 w-28 px-5 text-xl font-bold self-center h-10">{isSubmitting ? "Sending…" : "SUBMIT"}</button>
+                        {isSubmitSuccessful && (<span className="text-green-600 self-center">Message sent successfully!</span>)}
+                    </form>
                 </div>
             </div>
         </div>

@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<script>
+  /* Redirect unknown paths to index.html but keep the route */
+  const redirect = '/Portfolio/#' + window.location.pathname.replace('/Portfolio', '');
+  location.replace(redirect);
+</script>

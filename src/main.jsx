@@ -10,7 +10,7 @@ import Contact from './Pages/Contact'
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <HashRouter basename="/Portfolio">
+    <HashRouter>
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />

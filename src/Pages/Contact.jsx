@@ -58,7 +58,7 @@ function Contact() {
                         <textarea rows="4" {...register("Message", {required: "Message is required",maxLength: {value: 500, message: "Message can't exceed 500 chars"}})} placeholder="Enter your message" className="m-5 border-4 border-t-0 border-r-0 px-3"/>
                         {errors.Message && (<span className="text-red-500">{errors.Message.message}</span>)}
 
-                        <button type="submit" disabled={isSubmitting} className="m-5 border-x-2 w-28 px-5 text-xl font-bold self-center h-10">{isSubmitting ? "Sending…" : "SUBMIT"}</button>
+                        <button type="submit" disabled={isSubmitting} className="m-5 border-x-2 w-28 px-5 text-xl font-bold self-center h-10">{isSubmitting ? "Sending" : "SUBMIT"}</button>
                         {isSubmitSuccessful && (<span className="text-green-600 self-center">Message sent successfully!</span>)}
                     </form>
                 </div>

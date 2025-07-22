@@ -18,7 +18,7 @@ function Home() {
             <p className="md:text-2xl text-4xl  font-bold py-2 md:typing">Hi, I am</p>
             <p className="md:text-5xl text-6xl font-bold md:typing">Om Handa</p>
             <p className="md:text-lg  text-2xl font-bold text-[#909090]">Front-end Developer</p>
-            <a href="https://drive.google.com/file/d/17qwkoF5Idmyosh1iriZyC8Wgnv1u_3AK/view?usp=sharing" className='w-full flexad' target='_blank'><button className="resume bg-black text-white md:h-12 h-16 w-3/4 md:w-full font-bold text-2xl md:text-xl rounded-2xl flexad my-10 ">Download Resume</button></a>
+            <a href="https://drive.google.com/file/d/1OqRoGYoZfebd7c0h3T24oH27vt0vKJGh/view?usp=sharing" className='w-full flexad' target='_blank'><button className="resume bg-black text-white md:h-12 h-16 w-3/4 md:w-full font-bold text-2xl md:text-xl rounded-2xl flexad my-10 ">Download Resume</button></a>
             <div className="links flex space-x-7 md:space-x-5 my-2">
               <a href="https://github.com/Om-Handa" target="_blank" ><img src={Github} alt="Github" className="h-10 " /></a>
               <a href="https://www.linkedin.com/in/om-handa-62451b301" target="_blank"><img src={LinkedIn} alt="LinkedIn" className="h-10 " /></a>

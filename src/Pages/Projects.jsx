@@ -4,9 +4,12 @@ import Weather from '../assets/weather.gif'
 import RPS from '../assets/rockpaperscissors.gif'
 import Analog from '../assets/analog.gif'
 import Digital from '../assets/digital.gif'
+import Safar from "../assets/SAFAR.gif"
 
 function Projects() {
   const projectDetails=[
+    {gifpath:Safar ,githublink:"#",pagelink:"https://om-handa.github.io/Safar-frontend/",description:"Safar is a travel platform that simplifies trip planning with a user-friendly interface and intelligent city-based suggestions.."},
+
     {gifpath:Todo,githublink:"https://github.com/Om-Handa/React-Todo.git",pagelink:"https://om-handa.github.io/React-Todo/index.html",description:"A simple and responsive Todo App built with React, allowing users to add, view, and manage daily tasks with a clean and intuitive interface."},
 
     {gifpath:Weather,githublink:"https://github.com/Om-Handa/Real-time-Weather.git",pagelink:"https://om-handa.github.io/Real-time-Weather/weather.html",description:"A responsive weather app that shows real-time weather data for any city using an API."},
